@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const CharacterCard = ({ character }) => (
-  <div>
+  <figure>
     <img src={character.photoUrl} />
     <p>{character.name}</p>
-  </div>
+  </figure>
 );
 
 CharacterCard.propTypes = {

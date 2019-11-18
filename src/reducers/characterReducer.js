@@ -1,14 +1,19 @@
-import { SET_CHARACTER } from '../Actions/characterActions';
+import { SET_CHARACTER, SET_CHARACTER_LOADING, SET_CHARACTER_ERROR } from '../Actions/characterActions';
 
 const initialState = {
   photoUrl: '',
-  name: ''
+  name: '',
+  loading: true
 };
 
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case SET_CHARACTER:
-      return action.payload;
+      return { ...state, ...action.payload };
+    case SET_CHARACTER_LOADING:
+      return { ...state, loading: true };
+    case SET_CHARACTER_ERROR:
+      return { ...state, loading: false };
     default:
       return state;
   }

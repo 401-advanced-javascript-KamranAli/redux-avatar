@@ -3,7 +3,7 @@ export const SET_CHARACTER = 'SET_CHARACTER';
 export const SET_CHARACTER_LOADING = 'SET_CHARACTER_LOADING';
 export const SET_CHARACTER_ERROR = 'SET_CHARACTER_ERROR';
 
-export const setQuote = () => dispatch => {
+export const setCharacter = () => dispatch => {
   dispatch({
     type: SET_CHARACTER_LOADING
   });
