@@ -3,6 +3,8 @@ import Characters from '../Containers/Characters';
 
 export default function App() {
   return (
-    <Characters />
+    <>
+      <Characters />
+    </>
   );
 }

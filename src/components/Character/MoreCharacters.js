@@ -8,7 +8,7 @@ const MoreCharacters = ({ more }) => {
 };
 
 MoreCharacters.propTypes = {
-  more: PropTypes.func.isRequired
+  more: PropTypes.func
 };
 
 export default MoreCharacters;

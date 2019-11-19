@@ -1,8 +1,8 @@
 import { SET_CHARACTER, SET_CHARACTER_LOADING, SET_CHARACTER_ERROR } from '../Actions/characterActions';
 
 const initialState = {
-  photoUrl: '',
-  name: '',
+  image: '',
+  character: '',
   loading: true
 };
 

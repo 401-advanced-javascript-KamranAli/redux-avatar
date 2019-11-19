@@ -5,7 +5,7 @@ const CharacterCard = ({ character }) => (
   <figure>
     <img src={character.image} />
     <p>{character.character}</p>
-<p>{character.quote}</p>
+    <p>{character.quote}</p>
   </figure>
 );
 

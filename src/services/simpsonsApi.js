@@ -1,7 +1,7 @@
 export const fetchCharacter = () => {
-  return fetch('https://last-airbender-api.herokuapp.com/api/v1/characters/random')
+  return fetch('https://thesimpsonsquoteapi.glitch.me/quotes')
     .then(res => res.json())
-    .then(([{ Character, image, quote }]) => {
-      return { Character: Character, image: image, quote: quote };
+    .then(([{ character, image, quote }]) => {
+      return { character: character, image: image, quote: quote };
     });
 };

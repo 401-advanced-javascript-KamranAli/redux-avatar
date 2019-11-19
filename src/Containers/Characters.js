@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import CharacterCard from '../components/Character/CharacterCard';
 import { setCharacter } from '../Actions/characterActions';
 import { getCharacter } from '../Selectors/getCharacter';
+import CharacterCard from '../components/Character/CharacterCard';
+import MoreCharacters from '../components/Character/MoreCharacters';
 
 export default function DisplayCharacter() {
   const character = useSelector(getCharacter);
@@ -17,6 +18,7 @@ export default function DisplayCharacter() {
   return (
     <>
       <CharacterCard character={character} />
+      <MoreCharacters more={moreCharacters} />
     </>
   );
 }
