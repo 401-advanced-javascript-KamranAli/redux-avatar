@@ -1,4 +1,4 @@
-import { fetchCharacter } from '../services/avatarApi';
+import { fetchCharacter } from '../services/simpsonsApi';
 export const SET_CHARACTER = 'SET_CHARACTER';
 export const SET_CHARACTER_LOADING = 'SET_CHARACTER_LOADING';
 export const SET_CHARACTER_ERROR = 'SET_CHARACTER_ERROR';
